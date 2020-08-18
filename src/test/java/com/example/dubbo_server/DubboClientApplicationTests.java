@@ -1,6 +1,6 @@
 package com.example.dubbo_server;
 
-import com.alibaba.dubbo.spring.boot.DubboProperties;
+import com.example.dubbo_server.controller.HelloConsumer;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +12,9 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class DubboClientApplicationTests {
 @Autowired
 private HelloConsumer helloConsumer;
-@Autowired
-    DubboProperties dubboProperties;
     @Test
     public void contextLoads() {
-        System.out.println(dubboProperties.toString());
+//        System.out.println(dubboProperties.toString());
     }
 
 }
